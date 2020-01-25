@@ -12,7 +12,7 @@ _protobuf_rev=92a7e778e7394386f413cec28d67a07630f784b1
 _zipcode_rel=201810
 
 _pkgbase=mozc
-pkgname=fcitx-mozc
+pkgname=fcitx-mozc-w-emacs
 pkgdesc="Fcitx Module of A Japanese Input Method for Chromium OS, Windows, Mac and Linux (the Open Source Edition of Google Japanese Input)"
 pkgver=2.23.2815.102
 _fcitx_patchver=${pkgver}.1
@@ -23,7 +23,7 @@ license=('custom')
 depends=('qt5-base' 'fcitx' 'zinnia')
 makedepends=('pkg-config' 'python2' 'curl' 'gtk2' 'mesa' 'subversion' 'ninja' 'git' 'clang')
 replaces=('mozc-fcitx')
-conflicts=('mozc' 'mozc-server' 'mozc-utils-gui' 'mozc-fcitx')
+conflicts=('mozc' 'mozc-server' 'mozc-utils-gui' 'mozc-fcitx' 'fcitx-mozc')
 source=(
 	git+https://github.com/google/mozc.git#commit=${_mozc_rev}
 	pr444.patch::https://github.com/google/mozc/pull/444/commits/82d38f929882a9c62289b179c6fe41efed249987.patch
